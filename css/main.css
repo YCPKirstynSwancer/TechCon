@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #C4C4C4;
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #000;
+    font-family: 'Sarabun', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+      Home Page
+========================================================================== */
+ /* Add your custom styles under Author Custom Styles, not in the page */
+
+   /* Header Section */
+
+   header {
+    background-color: #FFA800;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3{
+    color: #FFA800;
+  }
+
+  header nav{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav a{
+      color: #000;
+      text-decoration: none;
+      margin: 2%;
+      font-size: 1.1em;
+  }
+
+  header nav a:hover{
+      color: #999;
+  }
+
+   /* Homepage Hero */
+
+   .hero{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    }
+
+    .hero img{
+        width: 800px;
+        height: auto;
+        margin: 4% 0% 4% 4%;
+    }
+
+    .hero h1{
+      text-align: right;
+    }
+
+    .intro{
+    width: 50%;
+    text-align: right;
+    font-size: 1.1em;
+    border-right: 3px solid #FFA800;
+    margin-right: 15px;
+    padding-right: 15px;
+    }
+
+
+    .extra_space{
+      margin: 2% 0 2% 0;
+    }
+
+
+    .Sponsor_HomePage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    .Sponsors{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .Sponsors a{
+      margin: 4%;
+    }
+
+    .Sponsors a img:hover{
+      opacity: .5;
+    }
+
+    .Locate{
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      color: #FFA800;
+    }
+
+
+    /* Footer Section */
+
+    footer {
+     background-color: #FFA800;
+     width: 100%;
+     padding: 40px;
+     text-align: right;
+     position: relative;
+     left: 0;
+     bottom: 0;
+   }
+
+   footer nav{
+     width:90%;
+   }
+
+   footer a{
+       color: #000;
+       text-decoration: none;
+       margin: 5px 15px;
+       font-size: 1.1em;
+   }
+
+   footer a:hover{
+       color: #999;
+   }
+/* ==========================================================================
+      Speakers Page
+========================================================================== */
+.speakers_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speakers{
+  width: 100%;
+  min-height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Speaker_Thanks{
+  width: 30%;
+  margin: 5%;
+  border-right: solid 2px #FFA800;
+  border-left: solid 2px #FFA800;
+  padding: 2%;
+}
+.SpeakerImages{
+flex-direction: row;
+justify-content: center;
+align-items: center;
+display: flex;
+width: 90%;
+flex-wrap: wrap;
+}
+
+.Ind_Photo{
+  width: 100%;
+  margin: 5px;
+}
+
+
+/* ==========================================================================
+      Schedule Page
+========================================================================== */
+
+/*Schedule for Day 1*/
+
+.Schedule{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.Day_1{
+width: 90%;
+margin: 0;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.Day_1 table {
+  width:100%;
+}
+.Day_1 table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.Day_1 th, td {
+  padding: 15px;
+  text-align: left;
+}
+.Day_1 table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+.Day_1 table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+.Day_1 table#t01 th {
+  background-color: #FFA800;
+  color: white;
+}
+
+/*Schedule for Day 2*/
+
+.Day_2{
+width: 90%;
+margin: 0;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.Day_2 table {
+  width:100%;
+}
+.Day_2 table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.Day_2 th, td {
+  padding: 15px;
+  text-align: left;
+}
+.Day_2 table#t02 tr:nth-child(even) {
+  background-color: #eee;
+}
+.Day_2 table#t02 tr:nth-child(odd) {
+ background-color: #fff;
+}
+.Day_2 table#t02 th {
+  background-color: #FFA800;
+  color: white;
+}
+
+/*Schedule for Day 3*/
+
+.Day_3{
+width: 90%;
+margin: 0;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.Day_3 table {
+  width:100%;
+}
+.Day_3 table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.Day_3 th, td {
+  padding: 15px;
+  text-align: left;
+}
+.Day_3 table#t03 tr:nth-child(even) {
+  background-color: #eee;
+}
+.Day_3 table#t03 tr:nth-child(odd) {
+ background-color: #fff;
+}
+.Day_3 table#t03 th {
+  background-color: #FFA800;
+  color: white;
+}
+
+.afterparty{
+  margin: 5%;
+}
+
+
+/* ==========================================================================
+      Code of Conduct
+========================================================================== */
+
+.conduct{
+ width: 90%;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+ }
+
+
+ .code_conduct{
+ width: 50%;
+ text-align: left;
+ font-size: 1.1em;
+ border-left: 3px solid #FFA800;
+ margin-left: 15px;
+ padding-left: 15px;
+ }
+
+/* ==========================================================================
+   Registration Page
+   ========================================================================== */
+
+.register_attendees{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+      Sponsor Pages
+========================================================================== */
+
+
+.SponsorImages{
+margin: 100px;
+flex-direction: row;
+justify-content: center;
+align-items: top;
+display: flex;
+width: 60%;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.sponsorlogo{
+  width: 100%;
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (max-width: 350px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
