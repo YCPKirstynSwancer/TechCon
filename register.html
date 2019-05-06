@@ -37,20 +37,42 @@
 
   <section class="register_attendees">
     <div class="register_form">
+    <div>
     <h2>Register</h2>
     <form action="/action_page.php">
-      First name:<br>
-      <input type="text" name="firstname" value="John/Jane">
-      <br>
-      Last name:<br>
-      <input type="text" name="lastname" value="Doe">
-      <br>
-      Email:<br>
+      <input type="text" name="fullname" value="John/Jane Doe">
+      <br><br>
       <input type="text" name="email" value="Email">
       <br><br>
-      <input type="submit" value="Submit">
+      <input type="text" name="emailconfirmation" value="Email Confirmation">
+      <br><br>
+      <input type="text" name="educationaltitle" value="Educational Title">
+      <br><br>
+      <input type="text" name="business" value="Business">
+      <br><br>
+      <input type="text" name="howhearabout" value="How did you hear about us?">
+      <br>
+      </div>
+
+      <div class="total_cost_parent">
+      <span class="total_cost">
+      Total Cost:<br/>
+      <select name="cost">
+        <option value="cost1">Attendee 1 Day Pass: $899.00</option>
+        <option value="cost1">Attendee 2 Day Pass: $1099.00</option>
+        <option value="cost1">Attendee 3 Day Pass $1299.00</option>
+        <option value="cost1">Attendee 3 Day Pass + Workshops: $1499.00</option>
+        <option value="cost1">Student Pass: $300.00/ day</option>
+      </select>
+    </span>
+  </div>
+
+  <div>
+      <br><br>
+      <button class="submit">Submit</button>
     </form>
   </div>
+</div>
   </section>
 
 

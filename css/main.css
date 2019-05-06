@@ -138,7 +138,10 @@ textarea {
   header nav a:hover{
       color: #999;
   }
-
+.Rep_Image{
+  width:100%;
+  height:auto;
+}
    /* Homepage Hero */
 
    .hero{
@@ -152,7 +155,7 @@ textarea {
     }
 
     .hero img{
-        width: 800px;
+        max-width: 800px;
         height: auto;
         margin: 4% 0% 4% 4%;
     }
@@ -276,6 +279,9 @@ flex-wrap: wrap;
   margin: 5px;
 }
 
+.modal p{
+  color:black;
+}
 
 /* ==========================================================================
       Schedule Page
@@ -428,20 +434,71 @@ flex-direction: column;
   flex-direction: column;
 }
 
+.register_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  width: 80%;
+}
+
+input{
+width: 300px;
+padding: 5px;
+}
+
+.total_cost_parent{
+  width: 100vw;
+  background-color: #FFA800;
+  color: #000;
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.total_cost{
+  background-color: #FFA800;
+  color: #000;
+}
+
+select{
+  background-color: #FFA800;
+  color: #000;
+  border: none;
+}
+
+.submit{
+  width: 120px;
+  height: 30px;
+  color: #000;
+  text-align: center;
+  background-color: #FFA800 !important;
+  border-radius: 35px;
+  padding: 2px 5px;
+  border: none;
+}
 /* ==========================================================================
       Sponsor Pages
 ========================================================================== */
 
+.Sponsors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
 
 .SponsorImages{
-margin: 100px;
-flex-direction: row;
+margin: auto;
+flex-direction: column;
 justify-content: center;
-align-items: top;
+align-items: center;
 display: flex;
 width: 60%;
 flex-wrap: wrap;
-align-items: center;
 }
 
 .sponsorlogo{
@@ -449,11 +506,40 @@ align-items: center;
   margin: 5px;
 }
 
+.sponsorlogo img{
+  width: 100px;
+  height:auto;
+  margin: 2%;
+}
+
+.sponsorlogo img:hover{
+  opacity: .5;
+}
 
 
 
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+   .about{
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    }
 
 
+    .about_page{
+    width: 50%;
+    text-align: left;
+    font-size: 1.1em;
+    border-left: 3px solid #FFA800;
+    margin-left: 15px;
+    padding-left: 15px;
+    }
 
 
 
@@ -543,13 +629,21 @@ align-items: center;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 1100px){
+  header nav{
+    width: 50%;
+}
 
 @media only screen and (max-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+
+
 }
 
 @media only screen and (max-width: 350px) {
     /* Style adjustments for viewports that meet the condition */
+
+
 }
 
 @media print,
