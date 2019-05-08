@@ -143,6 +143,11 @@ textarea {
   header nav a:hover{
       color: #999;
   }
+
+  a {
+    text-decoration: none;
+  }
+
 .Rep_Image{
   width:100%;
   height:auto;
@@ -708,6 +713,19 @@ header nav a{
     /* Style adjustments for high resolution devices */
 }
 
+}
+
+@media only screen and (max-width: 350px) {
+
+  header{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+
+  img.homelogo {
+    width: 80px; 
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
